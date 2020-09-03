@@ -39,7 +39,7 @@ has_ldiv!(L::AbstractDiffEqOperator) = false # ldiv!(du, L, u)
 7. Optional: expmv(A,u,p,t) = exp(t*A)*u and expmv!(v,A::DiffEqOperator,u,p,t)
    Required for sparse-saving exponential integration.
 8. Optional: factorizations. A_ldiv_B, factorize et. al. This is only required
-   for algorithms which use the factorization of the operator (Crank-Nicholson),
+   for algorithms which use the factorization of the operator (Crank-Nicolson),
    and only for when the default linear solve is used.
 =#
 
